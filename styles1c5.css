@@ -1,0 +1,93 @@
+body {
+  background: linear-gradient(90deg, blue, white);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+#navbar {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+#navbar a:hover {
+  transform: translateY(-10px);
+  color: lightblue;
+}
+
+#welcome-section {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#projects {
+  text-align: center;
+  padding: 20px;
+}
+
+#projects h1 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#projects .project-tile {
+  display: inline-block;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: calc(33% - 40px);
+  max-width: 300px;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  #projects .project-tile {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  #projects .project-tile {
+    width: 100%;
+  }
+}
+
+#profile {
+  text-align: center;
+  padding: 20px;
+}
+
+#profile a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}

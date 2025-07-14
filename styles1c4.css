@@ -1,0 +1,102 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size:22px;
+    animation:colorchange 3s ease-in-out 0s infinite;
+}
+
+/* Header Styling */
+#header {
+    background: linear-gradient(white, gray);
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    overflow: visible; 
+}
+
+/* Navigation Bar Styling */
+#nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0 20px;
+}
+
+#nav-bar li {
+    margin-right: 15px;
+}
+
+.nav-link {
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Header Image */
+#header-img {
+    height: 50px;
+}
+
+/* Main Content Styling */
+main {
+    padding-top: 70px; 
+    text-align: center;
+}
+
+/* Video Section */
+#video-section {
+    margin: 20px auto;
+}
+
+/* Form Styling */
+#form {
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+input[type="email"],
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Flexbox Usage */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media Query Example */
+@media (max-width: 768px) {
+    #nav-bar ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+    body{
+        margin-top:40px;
+    }
+}
+
+
+/* Animation */
+@keyframes colorchange {
+    0% { background: linear-gradient(90deg,black 10%,gray); }
+    50% { background: linear-gradient(90deg,gray,white,gray); }
+    100% { background: linear-gradient(90deg, gray 60%, black); }
+}
